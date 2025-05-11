@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISight - Tableau de bord Médecin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-eye"></i>
+                <h2>ISight</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><i class="fas fa-home"></i> Tableau de bord</li>
+                <li><i class="fas fa-calendar-check"></i> Mes rendez-vous</li>
+                <li><i class="fas fa-user-md"></i> Mes patients</li>
+                <li><i class="fas fa-file-medical-alt"></i> Dossiers médicaux</li>
+                <li><i class="fas fa-chart-line"></i> Statistiques</li>
+                <li><i class="fas fa-sign-out-alt"></i> Déconnexion</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="dashboard-header">
+                <button class="menu-button"><i class="fas fa-bars"></i></button>
+                <h1>Tableau de bord Médecin</h1>
+                <div class="user-info">
+                    <i class="fas fa-user-md"></i>
+                    <span>Dr. Martin</span>
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Consultations aujourd'hui</h3>
+                    <div class="number">8</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Patients en attente</h3>
+                    <div class="number">3</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Dossiers à compléter</h3>
+                    <div class="number">5</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Résultats à analyser</h3>
+                    <div class="number">2</div>
+                </div>
+            </div>
+
+            <div class="data-table">
+                <h2>Consultations du jour</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Patient</th>
+                            <th>Type</th>
+                            <th>Statut</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00</td>
+                            <td>Jean Dupont</td>
+                            <td>Consultation</td>
+                            <td>En cours</td>
+                            <td><button class="action-btn">Voir dossier</button></td>
+                        </tr>
+                        <tr>
+                            <td>09:30</td>
+                            <td>Marie Lambert</td>
+                            <td>Examen</td>
+                            <td>En attente</td>
+                            <td><button class="action-btn">Préparer</button></td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>Pierre Durand</td>
+                            <td>Suivi</td>
+                            <td>En attente</td>
+                            <td><button class="action-btn">Préparer</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="quick-actions">
+                <h2>Actions rapides</h2>
+                <div class="action-buttons">
+                    <button><i class="fas fa-file-medical"></i> Nouveau dossier</button>
+                    <button><i class="fas fa-prescription"></i> Nouvelle ordonnance</button>
+                    <button><i class="fas fa-calendar-plus"></i> Planifier RDV</button>
+                    <button><i class="fas fa-notes-medical"></i> Notes médicales</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/doctor.js"></script>
+</body>
+</html> 
